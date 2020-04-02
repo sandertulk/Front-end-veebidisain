@@ -1,0 +1,316 @@
+
+<!--
+	Developer: Sander Tulk
+	Date created: 30.05.2016
+	Last edited: 02.05.2016 
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Proekspert front-end arendaja proovitöö">
+		<meta name="author" content="Sander Tulk">
+		<title>Proekspert proovitöö</title>
+		<!--Bootstrap framework-->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<!-- Font for useage on website -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<!--Font Awesome CSS for icons on website--> 
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+		<!--Custom CSS-->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	</head>
+	<body>
+		
+		<!--=== MENU START ===============================================================================================
+		===============================================================================================--> 
+		<nav id="menu" class="navbar">
+	        <div class="container">
+	            <div class="navbar-header">
+	            	<!--Burger icon start-->
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu_links">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <!--Burger icon end-->
+	                <!--Proekspert logo-->
+	                <span class="logo"></span>
+	            </div>
+	            <!-- Content for toggling -->
+	            <div class="collapse navbar-collapse" id="menu_links">
+	            	<!--Menu links-->
+	                <ul>
+	                    <li class="active"><a href="#">Avaleht</a></li>
+						<li><a href="https://proekspert.ee/" target="_blank">Proekspert koduleht</a></li>
+						<li><a href="mailto:info@proekspert.ee?subject=Tere%20Pro!">Kirjuta meile</a></li>
+	                </ul>
+	                <!--Menu links end-->
+	            </div>
+	        </div>
+	    </nav>
+		<!--=== MENU END ===============================================================================================
+		===============================================================================================-->
+
+
+		<!--=== CONTENT START ===============================================================================================
+		===============================================================================================-->
+		<section id="content">
+
+			<!-- Hader slider start -->
+			<header style="min-height: 50px;">
+				<!-- Slider content start -->
+				<div class="container">
+					<div class="header_content_container">
+			        <div class="header_content">
+			        	<h1>Lorem ipsum</h1>
+			        	<p>Praesent vitae volutpat felis, sed congue massa. Ut egestas, enim sed consectetur cursus, eros massa rutrum mi, luctus pulvinar leo sem euismod urna. Aliquam vitae odio pellentesque, dapibus metus id, eleifend tortor. Suspendisse et ipsum diam.</p>
+			        </div>
+			    	</div>
+			    </div>
+			    <!-- Slider content end -->
+
+				<!-- Slider image container start -->			    
+			    <div class="slider_img_container">
+	   		 		<div id="jssor_slider_container">
+
+				        <!-- Jssor Slider Start -->
+					        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
+					        top: 0px; left: 0px; width: 1920px; height: 420px; overflow: hidden;">
+					       		<div class="container">
+					       			<!--Slider arrow container-->
+					       			<div class="slide_arrow_container">
+					       				<!-- Arrow Left -->
+										<span data-u="arrowleft"><i class="slide_arrow left fa fa-angle-left fa-4x" aria-hidden="true"></i></span>
+										  <!-- Arrow Right -->
+										<span data-u="arrowright"><i class="slide_arrow right fa fa-angle-right fa-4x" aria-hidden="true"></i></span>
+									</div>
+									<!--Slider arrow container end-->
+					       		</div>
+			   		 					 
+					            <!-- Slides Container -->
+					            <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1920px; height: 600px; overflow: hidden;">
+					                <div>
+					                    <img data-u="image" src="assets/img/1.jpg" alt="Proekspert building"/>
+					                </div>
+					                <div>
+					                    <img data-u="image" src="assets/img/2.jpg" alt="Old man"/>
+					                </div>
+					                <div>
+					                    <img data-u="image" src="assets/img/3.jpg" alt="Woman sleeping"/>
+					                </div>
+					            </div>
+					            <!-- Bullet navigator container -->
+					            <div data-u="navigator" class="slide_bullets" style="bottom: 26px; right: 6px;">
+					                <!-- bullet navigator item prototype -->
+					                <div data-u="prototype">
+					                	<i class="fa fa-circle" aria-hidden="true"></i>
+					                </div>
+					            </div>
+					            <!-- Bullet navigator container end -->
+					        </div>
+				        <!-- Jssor Slider End -->
+			    	</div>
+				</div>
+				<!-- Slider image container end -->	
+			</header>
+			<!-- Hader slider end -->
+
+			<!--Switch -->
+			<div class="container">
+				<div class="switch-container">
+					<!--Switch on title-->
+					<span class="off checked">Lorem ipsum 1</span>
+					<label class="switch">
+						<!-- Switch input -->
+						<input class="switch-input" type="checkbox"/>
+						<!--Switch handle-->
+						<span class="switch-handle"></span> 
+					</label>
+					<!--Switch off title-->
+					<span class="on">Lorem ipsum 2</span>
+				</div>
+			</div>
+			<!--Switch end -->
+
+			<!-- Page Content start -->
+			<div class="page_content_container">
+				<!--Content to be hidden when switch is clicked-->
+				<div id="page_content" class="container">
+					<!--Content box 1-->
+					<div class="content_box">
+						<!-- Blue content icon -->
+						<div class="content_icon">
+							<i class="fa fa-leaf fa-4x"></i> 
+						</div>
+						<h2>Lorem ipsum</h2>
+						<!--Form start-->
+						<form>
+							<!-- Radio input start-->
+							<div class="radio">
+					            <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
+					            <label for="radio-1" class="radio-custom-label">Maecenas libero risus, convallis eget mauris non, sollicitudin aliquam quam.</label>
+					        </div>
+					        <div class="radio">
+					            <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+					            <label for="radio-2" class="radio-custom-label">Maecenas libero risus, convallis eget mauris non, sollicitudin aliquam quam.</label>
+					        </div>
+					        <!-- Radio check end-->
+					        <!-- Email input start -->
+							<fieldset class="form-group">
+							    <label>E-mail</label>
+							    <input type="email" class="form-control" id="email" placeholder="Enter your e-mail here">
+						 	</fieldset>
+						 	<!-- Email input end -->
+						 	<!-- Chekbox input start-->
+							<div class="checkbox">
+							      <input id="checkbox1" class="checkbox-custom" type="checkbox">
+							      <label for="checkbox1" class="checkbox-custom-label">Lass aptent taciti sociosqu ad litora torquent per conubia nostra.</label>
+						  	</div>
+						  	<!-- Checkbox input end start-->
+						  	<!--Submit button-->
+						  	<button class="btn btn-primary pull-right">Submit</button>
+						</form>
+						<!--Form end-->
+					</div>
+					<!--Content box 1 end-->
+
+					<!--Content box 2-->
+					<div class="content_box">
+						<!-- Blue content icon -->
+						<div class="content_icon">
+							<i class="fa fa-user-md fa-4x"></i>
+						</div>
+						<h2>Lorem ipsum Vivis<br> magna justo, lacinia</h2>
+						<p>Vestibulum ultricies ligula nec suscipit porta. Vivamus blandit mattis malesuada.</p>
+						<ul>
+							<li><p>Nunc porttitor enim laoreet magna ultrices porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sit amet semper eros.</p></li>
+							<li><p>Integer rutrum ipsum eget maximus posuere. Sed nec molestie tortor, rutrum vehicula purus.</p></li>
+						</ul>
+					</div>
+					<!--Content box 2 end-->
+
+					<!--Content box 3-->
+					<div class="content_box">
+						<!-- Blue content icon -->
+						<div class="content_icon">
+							<i class="fa fa-stethoscope fa-4x"></i>
+						</div>
+						<span class="blue_title">Sed pharetra velit id ultrices aliquet. Praesent vitae.</span>
+					</div>
+					<!--Content box 3 end-->
+				</div>
+				<!--Content to be hidden when switch is clicked end-->
+			</div>
+			<!-- Page Content end -->
+
+		</section>
+		<!--=== CONTENT END ==================================================================================================
+		===============================================================================================-->
+
+		<!--=== FOOTER START ==================================================================================================
+		===============================================================================================-->
+		<footer class="footer">
+			<div class="container">
+				<!--Footer links-->
+				<ul class="pull-left">
+					<li><a href="https://proekspert.ee/" target ="_blank">Proekspert AS 2016</a></li>
+					<li class="pipe">|</li>
+					<li><a href="mailto:info@proekspert.ee?subject=Tere%20Pro!">info@proekspert.ee</a></li>
+				</ul>
+				<!--Footer links end-->
+
+				<!--Footer icons-->
+				<div class="footer_icons">
+					<a href="#"><i class="fa fa-plane fa-2x"></i></a>
+					<a href="#"><i class="fa fa-truck fa-2x"></i></a>
+					<a href="#"><i class="fa fa-rocket fa-2x"></i></a>
+				</div>
+				<!--Footer icons end-->
+			</div>
+		</footer>
+		<!--=== FOOTER END ==================================================================================================
+		===============================================================================================-->
+
+		<!--=== JAVASCRIPT START ==================================================================================================
+		===============================================================================================-->
+		<!--Jquery javascript library-->
+		<script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
+		<!--Bootstrap javascript-->
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+		<!--Jssor slider javascript-->
+		<script type="text/javascript" src="assets/js/jssor.slider.mini.js"></script>
+		<!--Jssor slider options javascript-->
+		<script>
+        jQuery(document).ready(function ($) {
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $Idle: 7000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $Cols: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 0,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
+              
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Rows: 1,                                       //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                    $Scale: false                                   //Scales bullets navigator or not while slider scale
+                },
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        	});
+    	</script>
+    	<!--Jssor slider options javascript end-->
+
+    	<!--Custom javascript-->
+    	<script>
+    		$(document).ready(function(){
+    			/*Switch functionality*/
+    			$('.switch-input').change(function (){
+    				/*Check if switch-input is checked*/
+    				if($(this).prop("checked")){
+    					$("#page_content").fadeOut();/*If switch input is checked fade out the #page_content element*/
+    					$(".switch-container .on").addClass("checked"); /*Add the class "checked" to element*/
+    					$(".switch-container .off").removeClass("checked");/*Remove the class "checked" to element*/
+    				}else {
+    					$("#page_content").fadeIn(); /*If switch input is not checked fade in the #page_content element*/
+    					$(".switch-container .off").addClass("checked"); /*Add the class "checked" to element*/
+    					$(".switch-container .on").removeClass("checked"); /*Remove the class "checked" to element*/
+    				}
+    			});
+    			/*Switch end*/
+    		});
+    	</script>
+    	<!--Custom javascript end-->
+
+    	<!--=== JAVASCRIPT END ==================================================================================================
+		===============================================================================================-->
+	</body>
+</html>
